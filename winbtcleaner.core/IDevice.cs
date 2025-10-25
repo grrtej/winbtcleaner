@@ -4,4 +4,7 @@
 public interface IDevice
 {
     string Name { get; }
+    bool IsConnected { get; }
+
+    Task<bool> Unpair();
 }

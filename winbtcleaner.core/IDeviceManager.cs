@@ -5,4 +5,5 @@ public interface IDeviceManager
 {
     IEnumerable<IDevice> Devices { get; }
     Task RefreshDevices();
+    Task RemoveStaleDevices();
 }
